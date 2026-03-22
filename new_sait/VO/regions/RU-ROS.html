@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ростовская область</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #ffffff;
+      color: #003366;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    .back-btn {
+      text-align: left;
+      margin: 20px 0;
+    }
+    .back-btn a {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #f1f3f5;
+      color: #1a5276;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .back-btn a:hover {
+      background: #e0e7eb;
+    }
+    h1 {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #007BFF;
+      font-size: 2.2rem;
+    }
+    .layout {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .coat {
+      flex: 0 0 240px;
+      height: 280px;
+      background: #f8f9fa;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    }
+    .coat img {
+      max-width: 200px;
+      max-height: 260px;
+      object-fit: contain;
+    }
+    .info {
+      flex: 1;
+      min-width: 280px;
+      background: #f8f9fa;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    }
+    .info p { margin-bottom: 20px; line-height: 1.7; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+    .stats dt { font-weight: 700; color: #007BFF; }
+    .achievements h2 {
+      margin: 24px 0 12px;
+      font-size: 1.3rem;
+      color: #0055aa;
+    }
+    .achievements ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+        align-items: center;
+      }
+      .coat {
+        order: -1;
+        width: 100%;
+        max-width: 280px;
+        height: 260px;
+      }
+      .stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-btn">
+    <a href="javascript:history.back()">&larr; Назад</a>
+  </div>
+
+  <h1>Ростовская область</h1>
+
+  <div class="layout">
+    <div class="coat">
+      <img src="../images/coats/RU-ROS.png" alt="Герб Ростовская область"
+           onerror="this.src='images/coats/placeholder.png'; this.onerror=null;">
+    </div>
+
+    <div class="info">
+      <p>Ростовская область — субъект Российской Федерации на юге европейской части России, входит в состав Южного федерального округа.</p>
+
+      <dl class="stats">
+        <dt>Население</dt><dd>~4,14 млн.</dd>
+        <dt>ВРП</dt><dd>~2,98 трлн. ₽</dd>
+        <dt>Основные отрасли</dt><dd>АПК , машиностроение , уголь, логистика</dd>
+      </dl>
+
+      <div class="achievements">
+        <h2>Экономические итоги на момент 2025г.</h2>
+        <ul>
+          <li>Промышленное производство. В январе-августе 2025 года индекс промышленного производства составил 100,5%, что почти соответствует среднероссийскому показателю (100,8%). </li>
+          <li>Инвестиционная активность. За первое полугодие объём инвестиций в основной капитал вырос на 4,1%. Наибольшие инвестиции направлены в промышленность, АПК и строительство. </li>
+          <li>Бюджет. Доходы бюджета Ростовской области по итогам 2025 года составили 332,8 млрд рублей, расходы — 344,5 млрд рублей.</li>
+          <li>Внешнеторговые связи. По итогам первой половины 2025 года, география внешнеторгового оборота включает шесть направлений: Азия (65,8%), Африка (21,9%), СНГ (11%), Европа (0,9%), Южная и Северная Америка (по 0,2%).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

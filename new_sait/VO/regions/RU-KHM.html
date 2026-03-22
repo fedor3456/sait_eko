@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ханты-Мансийский АО - Югра</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #ffffff;
+      color: #003366;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    .back-button {
+      text-align: left;
+      margin: 20px 0;
+    }
+    .back-button a {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #f1f3f5;
+      color: #1a5276;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .back-button a:hover {
+      background: #e0e7eb;
+    }
+    h1 {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #007BFF;
+      font-size: 2.2rem;
+    }
+    .layout {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .coat {
+      flex: 0 0 240px;
+      height: 280px;
+      background: #f8f9fa;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    }
+    .coat img {
+      max-width: 200px;
+      max-height: 260px;
+      object-fit: contain;
+    }
+    .info {
+      flex: 1;
+      min-width: 280px;
+      background: #f8f9fa;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    }
+    .info p { margin-bottom: 20px; line-height: 1.7; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+    .stats dt { font-weight: 700; color: #007BFF; }
+    .achievements h2 {
+      margin: 24px 0 12px;
+      font-size: 1.3rem;
+      color: #0055aa;
+    }
+    .achievements ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+        align-items: center;
+      }
+      .coat {
+        order: -1;
+        width: 100%;
+        max-width: 280px;
+        height: 260px;
+      }
+      .stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-button">
+    <a href="javascript:history.back()">&larr; Назад</a>
+  </div>
+
+  <h1>Ханты-Мансийский АО - Югра</h1>
+
+  <div class="layout">
+    <div class="coat">
+      <img src="../images/coats/RU-KHM.png" alt="Герб Ханты-Мансийский АО - Югра"
+           onerror="this.src='images/coats/placeholder.png'; this.onerror=null;">
+    </div>
+
+    <div class="info">
+      <p>Ханты-Мансийский автономный округ — Югра расположен в Западной Сибири. Граничит с Республикой Коми, Красноярским краем, Томской, Омской, Тюменской, Свердловской областями, Ямало-Ненецким автономным округом.</p>
+
+      <dl class="stats">
+        <dt>Население</dt><dd>~1,78 млн.</dd>
+        <dt>ВРП</dt><dd>~8,49 трлн. ₽</dd>
+        <dt>Основные отрасли</dt><dd>Добыча полезных ископаемых, обрабатывающая промышленность</dd>
+      </dl>
+
+      <div class="achievements">
+        <h2>Экономические итоги на момент 2025г.</h2>
+        <ul>
+          <li>Индекс промышленного производства к соответствующему периоду 2024 года составил 98,4%.</li>
+          <li>В декабре 2025 года индекс потребительских цен составил 100,6% относительно предыдущего месяца, в том числе на продовольственные товары — 101,0%, непродовольственные товары — 100,8%, услуги — 99,7%.</li>
+          <li>Среднемесячная номинальная начисленная заработная плата одного работника организаций в январе — ноябре 2025 года составила 130 133 рубля или 101,4% в реальном исчислении к январю — ноябрю 2024 года.</li>
+          <li>За период с января по декабрь 2025 года населению округа оказано платных услуг во всех секторах реализации на 234,6 млрд рублей, что составило 105,3% к соответствующему периоду предыдущего года.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

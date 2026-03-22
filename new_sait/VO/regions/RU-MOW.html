@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Москва</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffffff;
+      color: #003366;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    .back-button {
+      text-align: left;
+      margin: 20px 0;
+    }
+    .back-button a {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #f1f3f5;
+      color: #1a5276;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .back-button a:hover {
+      background: #e0e7eb;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #007BFF; 
+      font-size: 2.4rem;
+    }
+
+    .region-layout {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    /* Левая колонка — герб */
+    .coat-wrapper {
+      flex: 0 0 240px;
+      height: 280px;
+      background: #f8f9fa;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    }
+    .coat-wrapper img {
+      max-width: 200px;
+      max-height: 260px;
+      object-fit: contain;
+    }
+
+    /* Правая колонка — данные */
+    .info-block {
+      flex: 1;
+      min-width: 280px;
+      background: #f8f9fa;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    }
+    .info-block p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 24px; /* отступ перед достижениями */
+    }
+    .stats dt {
+      font-weight: 700;
+      color: #007BFF;
+    }
+    .stats dd {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* Блок достижений — под статистикой */
+    .achievements h2 {
+      font-size: 1.3rem;
+      color: #0055aa;
+      margin-bottom: 12px;
+    }
+    .achievements ul {
+      padding-left: 20px;
+      margin: 0;
+      line-height: 1.7;
+    }
+    .achievements li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .region-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+      .coat-wrapper {
+        order: -1;
+        width: 100%;
+        max-width: 280px;
+        height: 260px;
+      }
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔙 Кнопка "Назад" -->
+  <div class="back-button">
+    <a href="javascript:history.back()">&larr; Назад</a>
+  </div>
+
+  <h1>Москва</h1>
+
+  <div class="region-layout">
+    <div class="coat-wrapper">
+      <img src="../images/coats/RU-MOW.png" alt="Герб Москвы"
+           onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22 viewBox=%220 0 100 100%22><text x=%2250%22 y=%2255%22 text-anchor=%22middle%22 fill=%22%23003366%22 font-size=%2212%22>Герб отсутствует</text></svg>';">
+    </div>
+
+    <div class="info-block">
+      <p>Столица Российской Федерации, крупнейший город страны по численности населения и экономике. Москва — важнейший научный, культурный, транспортный и финансовый центр России.</p>
+
+      <dl class="stats">
+        <dt>Население</dt>
+        <dd>~13 млн человек</dd>
+
+        <dt>ВРП</dt>
+        <dd>~24 трлн ₽</dd>
+
+        <dt>Основные отрасли</dt>
+        <dd>Финансы, IT, госуправление, наука, торговля</dd>
+
+      </dl>
+
+      <!-- 💡 Экономические достижения — теперь под статистикой -->
+      <div class="achievements">
+        <h2>Экономические достижения</h2>
+        <ul>
+          <li>Лидер по привлечению прямых иностранных инвестиций в РФ (более 30% от общероссийского объёма).</li>
+          <li>Более 80% всех российских ИТ-компаний зарегистрированы в Москве.</li>
+          <li>Москва — единственный регион РФ с положительным миграционным и естественным приростом населения.</li>
+          <li>Входит в топ-10 мировых городов по количеству миллиардеров (по данным Forbes).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
