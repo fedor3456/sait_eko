@@ -1,0 +1,61 @@
+{
+  "moscow": {
+    "name": "Московский военный округ",
+    "page": "moscow.html",
+    "gdp_per_capita": "~850 тыс. руб.",
+    "industry_share": "12% промышленности РФ",
+    "vpc": "Ключевой центр ОПК: ЦНИИ, «Алмаз-Антей», «Ростех»",
+    "regions": [
+      "RU-BEL", "RU-BRY", "RU-VLA", "RU-VOR", "RU-IVA", "RU-KLU", "RU-KOS", "RU-KRS",
+      "RU-LIP", "RU-MOS", "RU-NIZ", "RU-ORL", "RU-RYA", "RU-SMO", "RU-TAM", "RU-TVE",
+      "RU-TUL", "RU-YAR", "RU-MOW"
+    ]
+  },
+  "leningrad": {
+    "name": "Ленинградский военный округ",
+    "page": "leningrad.html",
+    "gdp_per_capita": "~620 тыс. руб.",
+    "industry_share": "7% промышленности РФ",
+    "vpc": "Судостроение, ПВО, предприятия в Санкт-Петербурге и Ленобласти",
+    "regions": [
+      "RU-KR", "RU-KO", "RU-ARK", "RU-VLG", "RU-KGD", "RU-LEN", "RU-MUR", "RU-NGR",
+      "RU-PSK", "RU-SPE", "RU-NEN"
+    ]
+  },
+  "southern": {
+    "name": "Южный военный округ",
+    "page": "southern.html",
+    "gdp_per_capita": "~490 тыс. руб.",
+    "industry_share": "8% промышленности РФ",
+    "vpc": "Оборонные предприятия в Краснодаре, Ростове, горная инфраструктура",
+    "regions": [
+      "RU-AD", "RU-DA", "RU-DON", "RU-IN", "RU-KB", "RU-KL", "RU-KC", "RU-CR",
+      "RU-LUG", "RU-SE", "RU-CE", "RU-KDA", "RU-STA", "RU-AST", "RU-VGG", "RU-ZP",
+      "RU-ROS", "RU-HR", "RU-SEV"
+    ]
+  },
+  "central": {
+    "name": "Центральный военный округ",
+    "page": "central.html",
+    "gdp_per_capita": "~560 тыс. руб.",
+    "industry_share": "18% промышленности РФ",
+    "vpc": "Тяжёлое машиностроение, Уралвагонзавод, «Уралхим», ОПК в Перми и Екатеринбурге",
+    "regions": [
+      "RU-AL", "RU-BA", "RU-ME", "RU-MO", "RU-TA", "RU-TY", "RU-UD", "RU-KK",
+      "RU-CU", "RU-ALT", "RU-KYA", "RU-PER", "RU-IRK", "RU-KEM", "RU-KIR", "RU-KGN",
+      "RU-NVS", "RU-OMS", "RU-ORE", "RU-PNZ", "RU-SAM", "RU-SAR", "RU-SVE", "RU-TOM",
+      "RU-TYU", "RU-ULY", "RU-CHE", "RU-KHM", "RU-YAN"
+    ]
+  },
+  "eastern": {
+    "name": "Восточный военный округ",
+    "page": "eastern.html",
+    "gdp_per_capita": "~420 тыс. руб.",
+    "industry_share": "6% промышленности РФ",
+    "vpc": "Дальний Восток: судостроение, радиолокация, космодром «Восточный»",
+    "regions": [
+      "RU-BU", "RU-SA", "RU-ZAB", "RU-KAM", "RU-PRI", "RU-KHA", "RU-AMU", "RU-MAG",
+      "RU-SAK", "RU-YEV", "RU-CHU"
+    ]
+  }
+}
